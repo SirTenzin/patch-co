@@ -3,7 +3,7 @@ const express = require('express');
 const app = express()
 const fs =  require('fs')
 
-app.listen(8080, () => {
+app.listen(process.env.port || 5000, () => {
     console.log("[APP] Online")
 })
 
