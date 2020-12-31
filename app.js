@@ -3,6 +3,10 @@ const express = require('express');
 const app = express()
 const fs =  require('fs')
 
+app.listen(8080, () => {
+    console.log("[APP] Online")
+})
+
 app.get('/', (req, res) => {
     fs.readFileSync('index.html', (err, data) => {
         if(err) {
