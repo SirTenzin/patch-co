@@ -4,7 +4,7 @@ const app = express()
 const fs =  require('fs')
 const PORT = process.env.port || 5000;
 
-app.listen(port, () => {
+app.listen(PORT, () => {
     console.log("[APP] Online")
 })
 
